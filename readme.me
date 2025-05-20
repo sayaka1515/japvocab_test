@@ -1,0 +1,107 @@
+JapVocab - 日語單字測驗程式
+介紹
+JapVocab 是一個用於學習日語單字的桌面應用程式，幫助使用者通過練習模式和考試模式掌握日語 N5 至 N1 級別的單字。程式支援錯題記錄、間隔重複複習，並提供簡單易用的圖形介面。
+功能
+
+練習模式：無時間限制，支援 Tatoeba API 抓取例句，幫助學習單字用法。
+考試模式：每題 30 秒計時，結束後顯示正確率和總分。
+錯題記錄與回顧：自動記錄答錯的單字，提供「錯題回顧」功能。
+間隔重複（Spaced Repetition）：錯題會在 1 天後提醒複習，幫助長期記憶。
+多級別支援：涵蓋 N5、N4、N3、N2、N1 級別的單字。
+
+系統要求
+
+作業系統：Windows（目前版本專為 Windows 設計）
+Python 版本：3.9
+依賴套件：requests（用於抓取例句）
+
+安裝與運行
+必要條件
+
+確保已安裝 Python 3.9，驗證方式：
+python --version
+
+如果未安裝，請從 Python 官網 下載並安裝。
+
+安裝依賴：
+pip install requests
+
+
+
+運行程式
+
+從源碼運行：
+
+將專案下載或複製到本地：git clone <repository-url>  # 如果有 Git 倉庫
+cd japvocab/app
+python ui.py
+
+
+確保 output 資料夾中包含 n1_zh.csv, n2_zh.csv, ..., n5_zh.csv 檔案（格式為 expression,reading,meaning,tags）。
+
+
+運行可執行檔案：
+
+專案已打包為 ui.exe，位於 japvocab 目錄。
+雙擊 japvocab/ui.exe 直接運行。
+
+
+
+打包（若需自訂修改後重新打包）
+
+確保安裝 PyInstaller：pip install pyinstaller
+
+
+在 japvocab/app 目錄下執行：pyinstaller --add-data "output;output" --distpath "../" -F ui.py
+
+
+打包後的 ui.exe 會生成在 japvocab 目錄。
+
+使用方法
+
+啟動程式：運行 ui.exe 或 python ui.py。
+選擇模式：從下拉選單選擇「練習模式」或「考試模式」。
+選擇級別：選擇 N5 至 N1 級別。
+開始測驗：
+輸入答案後按「提交答案」或 Enter 鍵。
+練習模式顯示例句，考試模式有 30 秒計時。
+
+
+錯題管理：
+答錯後自動記錄，點擊「錯題回顧」查看。
+間隔重複會在錯題到期時提醒。
+
+
+重啟或退出：使用「重啟測驗」重新開始，或「退出」結束程式。
+
+檔案結構
+japvocab/
+├── app/
+│   ├── __pycache__/
+│   ├── exam_mode.py
+│   ├── practice_mode.py
+│   ├── ui.py
+│   └── output/
+│       ├── n1_zh.csv
+│       ├── n2_zh.csv
+│       ├── n3_zh.csv
+│       ├── n4_zh.csv
+│       └── n5_zh.csv
+├── ui.exe
+└── wrong_answers.json (運行後生成)
+
+已知問題
+
+間隔重複目前為簡單實現，複習間隔固定為 1 天，未來可擴展為動態調整。
+Tatoeba API 可能因網路問題或無相關例句而失敗。
+
+未來計劃
+
+添加進度追蹤與統計功能。
+加入語音朗讀功能，提升聽力練習。
+支援自訂詞庫或多語言介面。
+
+貢獻與聯繫
+如有建議或問題，請聯繫開發者（目前為您自己！）。歡迎提出功能需求或提交程式碼改進！
+版權與許可
+此程式為個人學習專案，版權歸作者所有，僅限非商業使用。
