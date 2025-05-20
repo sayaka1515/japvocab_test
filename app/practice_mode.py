@@ -4,6 +4,8 @@ import re
 import os
 import requests
 import threading
+import json
+from datetime import datetime, timedelta
 
 # 清理答案函數，移除多餘字符並正規化（僅用於比較）
 def clean_answer(text):
@@ -41,6 +43,24 @@ def get_tatoeba_examples(word, callback):
         print(f"Error fetching from Tatoeba: {e}")
         callback(None)
 
+def save_wrong_answer(question, reading, user_answer, correct_answer):
+    wrong_answer = {
+        "question": question,
+        "reading": reading,
+        "answer": user_answer,
+        "correct_answer": correct_answer,
+        "next_review": (datetime.now() + timedelta(days=1)).isoformat(),
+        "review_interval": 1  # 初始間隔 1 天
+    }
+    if not os.path.exists("wrong_answers.json"):
+        with open("wrong_answers.json", "w", encoding="utf-8") as f:
+            json.dump([], f)
+    with open("wrong_answers.json", "r", encoding="utf-8") as f:
+        wrong_answers = json.load(f)
+    wrong_answers.append(wrong_answer)
+    with open("wrong_answers.json", "w", encoding="utf-8") as f:
+        json.dump(wrong_answers, f)
+
 class PracticeMode:
     def __init__(self, ui_instance):
         print("初始化 PracticeMode...")  # 調試輸出
@@ -69,10 +89,14 @@ class PracticeMode:
             print(f"成功載入 {len(self.vocab)} 個詞彙")  # 調試輸出
             self.score = 0
             self.ui.update_result(f"已載入 {level} 詞彙表！\n")
-        except FileNotFoundError:
-            print(f"錯誤：找不到 {file_path}")  # 調試輸出
+            self.next_word()  # 自動進入第一題
+        except FileNotFoundError as e:
+            print(f"錯誤：找不到 {file_path} - {e}")  # 調試輸出
             self.ui.update_result(f"錯誤：找不到 {file_path}。請確保 output 資料夾中存在該檔案！")
             self.ui.root.quit()
+        except Exception as e:
+            print(f"載入失敗: {e}")  # 調試輸出
+            self.ui.update_result(f"載入失敗: {e}")
 
     def get_current_word_display(self):
         return f"日文: {self.current_word['jp']} ({self.current_word['kana']})" if self.current_word else "日文: 無單字"
@@ -95,6 +119,7 @@ class PracticeMode:
             self.is_correct = True
         else:
             self.is_correct = False
+            save_wrong_answer(self.current_word['jp'], self.current_word['kana'], answer, self.current_word['zh'])
         self.example_fetching = True
         threading.Thread(target=lambda: get_tatoeba_examples(self.current_word['jp'], self.update_examples), daemon=True).start()
 

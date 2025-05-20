@@ -2,6 +2,9 @@ import tkinter as tk
 from tkinter import messagebox, scrolledtext
 from practice_mode import PracticeMode
 from exam_mode import ExamMode
+import json
+import os
+from datetime import datetime, timedelta
 
 class UIApp:
     def __init__(self, root):
@@ -35,14 +38,27 @@ class UIApp:
 
         tk.Button(root, text="提交答案", command=self.on_submit, font=("Arial", 12)).pack(pady=5)
         tk.Button(root, text="重啟測驗", command=self.on_reset, font=("Arial", 12)).pack(pady=5)
+        tk.Button(root, text="錯題回顧", command=self.review_wrong_answers, font=("Arial", 12)).pack(pady=5)
         tk.Button(root, text="退出", command=self.on_quit, font=("Arial", 12)).pack(pady=5)
 
         self.result_text = scrolledtext.ScrolledText(root, height=10, width=60, font=("Arial", 12), wrap=tk.WORD)
         self.result_text.pack(pady=10)
         self.result_text.config(state='disabled')
 
+        print("檢查間隔重複...")  # 調試輸出
+        self.check_spaced_repetition()  # 啟動時檢查是否需要複習
         print("開始載入模式...")  # 調試輸出
         self.on_mode_change(self.mode.get())  # 初始載入練習模式
+
+    def check_spaced_repetition(self):
+        if not os.path.exists("wrong_answers.json"):
+            return
+        with open("wrong_answers.json", "r", encoding="utf-8") as f:
+            wrong_answers = json.load(f)
+        current_time = datetime.now()
+        for item in wrong_answers:
+            if "next_review" in item and datetime.fromisoformat(item["next_review"]) <= current_time:
+                messagebox.showinfo("間隔重複複習", f"該複習了！\n日文: {item['question']} ({item['reading']})\n正確答案: {item['correct_answer']}")
 
     def on_mode_change(self, mode):
         print(f"切換模式: {mode}")  # 調試輸出
@@ -54,20 +70,39 @@ class UIApp:
         self.quiz.load_vocab(level)
         self.update_score()
         self.update_word()
+        self.update_result("")  # 初始化時清空結果，避免顯示預設訊息
 
     def on_submit(self):
         answer = self.answer_entry.get().strip()
         if answer:
             self.quiz.check_answer(answer)
-            self.update_result()
             self.update_score()
+        else:
+            self.update_result("請輸入答案！\n")
 
     def on_reset(self):
         level = self.level.get()
         self.quiz.load_vocab(level)
-        self.update_result()
+        self.update_result("")
         self.update_score()
         self.update_word()
+
+    def review_wrong_answers(self):
+        if not os.path.exists("wrong_answers.json"):
+            messagebox.showinfo("提示", "目前沒有錯題記錄！")
+            return
+        with open("wrong_answers.json", "r", encoding="utf-8") as f:
+            wrong_answers = json.load(f)
+        if not wrong_answers:
+            messagebox.showinfo("提示", "目前沒有錯題記錄！")
+            return
+        review_text = "錯題回顧：\n"
+        for item in wrong_answers:
+            review_text += f"日文: {item['question']} ({item['reading']})\n你的答案: {item['answer']}\n正確答案: {item['correct_answer']}\n\n"
+        self.result_text.config(state='normal')
+        self.result_text.delete(1.0, tk.END)
+        self.result_text.insert(tk.END, review_text)
+        self.result_text.config(state='disabled')
 
     def on_quit(self):
         messagebox.showinfo("結束", f"遊戲結束！最終分數: {self.quiz.score if self.quiz else 0}")
@@ -84,7 +119,7 @@ class UIApp:
     def update_result(self, result_text=""):
         self.result_text.config(state='normal')
         self.result_text.delete(1.0, tk.END)
-        self.result_text.insert(tk.END, result_text if result_text else "請提交答案開始測驗！\n")
+        self.result_text.insert(tk.END, result_text)
         self.result_text.config(state='disabled')
 
 if __name__ == "__main__":

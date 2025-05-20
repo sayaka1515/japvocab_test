@@ -4,6 +4,8 @@ import re
 import os
 import tkinter as tk
 from tkinter import messagebox
+import json
+from datetime import datetime, timedelta
 
 # 清理答案函數，移除多餘字符並正規化（僅用於比較）
 def clean_answer(text):
@@ -20,6 +22,24 @@ def get_possible_meanings(zh_text):
         meanings.extend(re.split(r'[，]', content))
     meanings = [clean_answer(m) for m in meanings if m.strip()]
     return meanings
+
+def save_wrong_answer(question, reading, user_answer, correct_answer):
+    wrong_answer = {
+        "question": question,
+        "reading": reading,
+        "answer": user_answer,
+        "correct_answer": correct_answer,
+        "next_review": (datetime.now() + timedelta(days=1)).isoformat(),
+        "review_interval": 1  # 初始間隔 1 天
+    }
+    if not os.path.exists("wrong_answers.json"):
+        with open("wrong_answers.json", "w", encoding="utf-8") as f:
+            json.dump([], f)
+    with open("wrong_answers.json", "r", encoding="utf-8") as f:
+        wrong_answers = json.load(f)
+    wrong_answers.append(wrong_answer)
+    with open("wrong_answers.json", "w", encoding="utf-8") as f:
+        json.dump(wrong_answers, f)
 
 class ExamMode:
     def __init__(self, ui_instance):
@@ -54,10 +74,14 @@ class ExamMode:
             self.total_questions = 0
             self.correct_count = 0
             self.ui.update_result(f"已載入 {level} 詞彙表！考試將於開始後計時 30 秒/題。\n")
-        except FileNotFoundError:
-            print(f"錯誤：找不到 {file_path}")  # 調試輸出
+            self.next_word()  # 自動進入第一題
+        except FileNotFoundError as e:
+            print(f"錯誤：找不到 {file_path} - {e}")  # 調試輸出
             self.ui.update_result(f"錯誤：找不到 {file_path}。請確保 output 資料夾中存在該檔案！")
             self.ui.root.quit()
+        except Exception as e:
+            print(f"載入失敗: {e}")  # 調試輸出
+            self.ui.update_result(f"載入失敗: {e}")
 
     def get_current_word_display(self):
         return f"日文: {self.current_word['jp']} ({self.current_word['kana']})" if self.current_word else "日文: 無單字"
@@ -79,6 +103,7 @@ class ExamMode:
             self.timer = self.root.after(1000, self.check_timer)
         else:
             self.ui.update_result(f"時間到！自動進入下一題。\n正確答案: {self.current_word['zh']}")
+            save_wrong_answer(self.current_word['jp'], self.current_word['kana'], "", self.current_word['zh'])  # 記錄超時錯題
             self.next_word()
 
     def next_word(self):
@@ -100,6 +125,8 @@ class ExamMode:
         if cleaned_answer in possible_meanings:
             self.score += 10
             self.correct_count += 1
+        else:
+            save_wrong_answer(self.current_word['jp'], self.current_word['kana'], answer, self.current_word['zh'])
         self.next_word()
 
     def end_exam(self):
