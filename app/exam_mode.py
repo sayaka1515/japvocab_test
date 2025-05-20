@@ -6,6 +6,7 @@ import tkinter as tk
 from tkinter import messagebox
 import json
 from datetime import datetime, timedelta
+import time
 
 # 清理答案函數，移除多餘字符並正規化（僅用於比較）
 def clean_answer(text):
@@ -122,12 +123,17 @@ class ExamMode:
             return
         cleaned_answer = clean_answer(answer)
         possible_meanings = get_possible_meanings(self.current_word['zh'])
-        if cleaned_answer in possible_meanings:
+        is_correct = cleaned_answer in possible_meanings
+        if is_correct:
             self.score += 10
             self.correct_count += 1
+            result_msg = f"正確！+10分\n答案包含：{self.current_word['zh']}\n"
         else:
             save_wrong_answer(self.current_word['jp'], self.current_word['kana'], answer, self.current_word['zh'])
-        self.next_word()
+            result_msg = f"錯了！正確答案: {self.current_word['zh']}\n"
+        self.ui.update_result(result_msg)
+        # 短暫顯示結果後進入下一題
+        self.root.after(2000, self.next_word)  # 2 秒後進入下一題
 
     def end_exam(self):
         accuracy = (self.correct_count / self.total_questions * 100) if self.total_questions > 0 else 0

@@ -106,14 +106,14 @@ expression,reading,meaning,tags,guid
 起きる,おきる,起床（例如，睡覺）；發生,Genki Genki_Ln.3 Intermediate_Japanese Intermediate_Japanese_Ln.12 JLPT JLPT_3 JLPT_5 JLPT_N5,i~#f<a525w
 置く,おく,放置；躺放置,Genki Genki_Ln.21 JLPT JLPT_3 JLPT_5 JLPT_N5,"KTJ,/<Sfw7"
 奥さん,おくさん,（別人的）妻子（榮譽）,Genki Genki_Ln.14 Intermediate_Japanese Intermediate_Japanese_Ln.9 JLPT JLPT_5 JLPT_N5,raj<Z6u7R]
-お酒,おさけ,清酒酒精,Genki Genki_Ln.3 JLPT JLPT_5 JLPT_N5,BPnYG]G`g3
+お酒,おさけ,清酒，酒精,Genki Genki_Ln.3 JLPT JLPT_5 JLPT_N5,BPnYG]G`g3
 お皿,おさら,盤子，盤子,JLPT JLPT_5 JLPT_N5,"lNBs!SV,D!"
 伯父; 叔父さん,おじさん,叔叔，中年男人,JLPT JLPT_5 JLPT_N5,s$4&3o9W|{
 おじいさん,おじいさん,祖父，男性老年人,Genki Genki_Ln.13 JLPT JLPT_3 JLPT_5 JLPT_N5,OnBGSorIYO
 教える,おしえる,教，告知，指導,Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,&(rx8HabP
 押す,おす,推動，按下，蓋章（例如，護照）,Genki Genki_Ln.18 JLPT JLPT_5 JLPT_N5,O7S.k1^4+9
 遅い,おそい,慢的; （要）遲到,Genki Genki_Ln.10 Intermediate_Japanese Intermediate_Japanese_Ln.11 JLPT JLPT_5 JLPT_N5,e`TVG4aTiS
-お茶,おちゃ,（綠茶,Genki Genki_Ln.3 Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,"o|6tDcd,cL"
+お茶,おちゃ,茶，紅茶，茶水,Genki Genki_Ln.3 Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,"o|6tDcd,cL"
 お手洗い,おてあらい,廁所，洗手間，浴室（點燃，一個洗手的地方）,Genki Genki_Ln.2 Intermediate_Japanese Intermediate_Japanese_Ln.13 JLPT JLPT_5 JLPT_N5,jX+//z~!X8
 お父さん,おとうさん,父親（正式）,Genki Genki_Ln.1 Genki_Ln.2 JLPT JLPT_5 JLPT_N5,Kh?V(6)C|2
 弟,おとうと,弟弟,Genki Genki_Ln.1 Genki_Ln.7 JLPT JLPT_5 JLPT_N5,"ht,o]F,GkV"
@@ -393,7 +393,7 @@ expression,reading,meaning,tags,guid
 食べ物,たべもの,食物,Genki Genki_Ln.5 JLPT JLPT_5 JLPT_N5,ODKLC3jdI>
 食べる,たべる,吃,JLPT JLPT_5 JLPT_N5,c.+pIV(7xY
 卵,たまご,蛋,Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,c|(S)f_).K
-誰,だれ,世界衛生組織,Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,gDqm6J+#/O
+誰,だれ,誰,Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,gDqm6J+#/O
 誰か,だれか,有人,JLPT JLPT_3 JLPT_5 JLPT_N5,K{JPl*mB/&
 誕生日,たんじょうび,生日,Genki Genki_Ln.5 JLPT JLPT_5 JLPT_N5,HV8#h@HniT
 段々,だんだん,逐漸逐步,JLPT JLPT_5 JLPT_N5,O8dRR}CL>
@@ -462,14 +462,14 @@ expression,reading,meaning,tags,guid
 どちら,どちら,哪個（一個）（Way）;哪裡（禮貌）,Genki Genki_Ln.10 Genki_Ln.19 JLPT JLPT_5 JLPT_N5,pW(ud@AhIx
 どっち,どっち,哪一個，哪個方式,Genki Genki_Ln.10 JLPT JLPT_5 JLPT_N5,"PxI,t`JQ.N"
 とても,とても,非常（很多），極為，極其,Genki Genki_Ln.5 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_3 JLPT_5 JLPT_N5,t]2-1h#)V/
-どなた,どなた,世界衛生組織,JLPT JLPT_5 JLPT_N5,Ll)TbcW$yb
+どなた,どなた,是誰,JLPT JLPT_5 JLPT_N5,Ll)TbcW$yb
 隣,となり,旁邊，隔壁,Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,GigT2yQ[2E
 どの,どの,哪個,JLPT JLPT_5 JLPT_N5,H+g1ci<Mvc
 飛ぶ,とぶ,飛，跳,JLPT JLPT_5 JLPT_N5,wLF5gUV](>
 止まる,とまる,停止,JLPT JLPT_5 JLPT_N5,Q+OrrzleWd
 友達,ともだち,朋友,Genki Genki_Ln.1 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,E)w$/p&I#O
 土曜日,どようび,週六,Genki Genki_Ln.3 JLPT JLPT_3 JLPT_5 JLPT_N5,Q%+.*M.E9m
-鳥,とり,雞肉（點亮，鳥）,Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,lc>;F##&%m
+鳥,とり,鳥，鳥兒，禽肉,Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,lc>;F##&%m
 鶏肉,とりにく,雞肉,JLPT JLPT_5 JLPT_N5,dL<c9&FvJF
 取る,とる,參加（課）；獲得（成績）,Genki Genki_Ln.11 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,bLpD3ABv2g
 撮る,とる,拍攝（照片），製作（電影）,JLPT JLPT_5 JLPT_N5,w7O/i=vkEI
