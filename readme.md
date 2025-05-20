@@ -1,12 +1,15 @@
 # 問題紀錄
 
 ## 1. 模式切換與計時 Bug
+
 從考試模式切換到查詢錯誤的介面後，再切回考試模式時，倒數計時會出現異常，並且練習功能也會發生出現倒數計時的 bug。
 
 ## 2. 單字等級切換問題
+
 切換單字等級時，分數不會重置，且切換後的單字未即時更新，也未提示已切換。
 
 ## 3. Tatoeba API 問題
+
 Tatoeba API 查不到太多例句，導致程式延遲，建議將其移除以提升體驗。
 
 JapVocab - 日語單字測驗程式
@@ -37,34 +40,26 @@ python --version
 安裝依賴：
 pip install requests
 
-
-
 運行程式
 
 從源碼運行：
 
-將專案下載或複製到本地：git clone <repository-url>  # 如果有 Git 倉庫
+將專案下載或複製到本地：git clone <repository-url> # 如果有 Git 倉庫
 cd japvocab/app
 python ui.py
 
-
 確保 output 資料夾中包含 n1_zh.csv, n2_zh.csv, ..., n5_zh.csv 檔案（格式為 expression,reading,meaning,tags）。
-
 
 運行可執行檔案：
 
 專案已打包為 ui.exe，位於 japvocab 目錄。
 雙擊 japvocab/ui.exe 直接運行。
 
-
-
 打包（若需自訂修改後重新打包）
 
 確保安裝 PyInstaller：pip install pyinstaller
 
-
 在 japvocab/app 目錄下執行：pyinstaller --add-data "output;output" --distpath "../" -F ui.py
-
 
 打包後的 ui.exe 會生成在 japvocab 目錄。
 
@@ -77,27 +72,25 @@ python ui.py
 輸入答案後按「提交答案」或 Enter 鍵。
 練習模式顯示例句，考試模式有 30 秒計時。
 
-
 錯題管理：
 答錯後自動記錄，點擊「錯題回顧」查看。
 間隔重複會在錯題到期時提醒。
-
 
 重啟或退出：使用「重啟測驗」重新開始，或「退出」結束程式。
 
 檔案結構
 japvocab/
 ├── app/
-│   ├── __pycache__/
-│   ├── exam_mode.py
-│   ├── practice_mode.py
-│   ├── ui.py
-│   └── output/
-│       ├── n1_zh.csv
-│       ├── n2_zh.csv
-│       ├── n3_zh.csv
-│       ├── n4_zh.csv
-│       └── n5_zh.csv
+│ ├── **pycache**/
+│ ├── exam_mode.py
+│ ├── practice_mode.py
+│ ├── ui.py
+│ └── output/
+│ ├── n1_zh.csv
+│ ├── n2_zh.csv
+│ ├── n3_zh.csv
+│ ├── n4_zh.csv
+│ └── n5_zh.csv
 ├── ui.exe
 └── wrong_answers.json (運行後生成)
 
