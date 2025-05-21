@@ -24,6 +24,7 @@ class UIApp:
         tk.Label(root, text="選擇測驗級別：", font=("Arial", 12)).pack(pady=5)
         levels = ["N5", "N4", "N3", "N2", "N1"]
         tk.OptionMenu(root, self.level, *levels).pack(pady=5)
+        self.level.trace("w", self.on_level_change)  # 監聽等級變更
 
         self.score_label = tk.Label(root, text="分數: 0", font=("Arial", 12))
         self.score_label.pack(pady=5)
@@ -62,6 +63,10 @@ class UIApp:
 
     def on_mode_change(self, mode):
         print(f"切換模式: {mode}")  # 調試輸出
+        # 清除現有計時器
+        if self.quiz and hasattr(self.quiz, 'timer') and self.quiz.timer:
+            self.root.after_cancel(self.quiz.timer)
+            self.quiz.timer = None
         level = self.level.get()
         if mode == "練習模式":
             self.quiz = PracticeMode(self)
@@ -70,7 +75,21 @@ class UIApp:
         self.quiz.load_vocab(level)
         self.update_score()
         self.update_word()
-        self.update_result("")  # 初始化時清空結果，避免顯示預設訊息
+        self.update_result("")  # 初始化時清空結果
+
+    def on_level_change(self, *args):
+        print(f"切換等級: {self.level.get()}")  # 調試輸出
+        # 清除計時器
+        if self.quiz and hasattr(self.quiz, 'timer') and self.quiz.timer:
+            self.root.after_cancel(self.quiz.timer)
+            self.quiz.timer = None
+        # 重置分數和詞彙
+        if self.quiz:
+            self.quiz.score = 0
+            self.quiz.load_vocab(self.level.get())
+            self.update_score()
+            self.update_word()
+            self.update_result(f"已切換到 {self.level.get()} 級別！\n")
 
     def on_submit(self):
         answer = self.answer_entry.get().strip()
@@ -82,12 +101,18 @@ class UIApp:
 
     def on_reset(self):
         level = self.level.get()
+        if self.quiz and hasattr(self.quiz, 'timer') and self.quiz.timer:
+            self.root.after_cancel(self.quiz.timer)
+            self.quiz.timer = None
         self.quiz.load_vocab(level)
         self.update_result("")
         self.update_score()
         self.update_word()
 
     def review_wrong_answers(self):
+        if self.quiz and hasattr(self.quiz, 'timer') and self.quiz.timer:
+            self.root.after_cancel(self.quiz.timer)
+            self.quiz.timer = None
         if not os.path.exists("wrong_answers.json"):
             messagebox.showinfo("提示", "目前沒有錯題記錄！")
             return
@@ -105,6 +130,9 @@ class UIApp:
         self.result_text.config(state='disabled')
 
     def on_quit(self):
+        if self.quiz and hasattr(self.quiz, 'timer') and self.quiz.timer:
+            self.root.after_cancel(self.quiz.timer)
+            self.quiz.timer = None
         messagebox.showinfo("結束", f"遊戲結束！最終分數: {self.quiz.score if self.quiz else 0}")
         self.root.quit()
 

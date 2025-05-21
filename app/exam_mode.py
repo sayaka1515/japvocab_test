@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter import messagebox
 import json
 from datetime import datetime, timedelta
-import time
 
 # 清理答案函數，移除多餘字符並正規化（僅用於比較）
 def clean_answer(text):
@@ -119,6 +118,7 @@ class ExamMode:
     def check_answer(self, answer):
         if self.timer:
             self.root.after_cancel(self.timer)
+            self.timer = None
         if not self.current_word:
             return
         cleaned_answer = clean_answer(answer)

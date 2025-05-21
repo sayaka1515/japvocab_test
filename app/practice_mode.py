@@ -2,8 +2,6 @@ import random
 import csv
 import re
 import os
-import requests
-import threading
 import json
 from datetime import datetime, timedelta
 
@@ -22,26 +20,6 @@ def get_possible_meanings(zh_text):
         meanings.extend(re.split(r'[，]', content))
     meanings = [clean_answer(m) for m in meanings if m.strip()]
     return meanings
-
-# 從 Tatoeba API 抓取例句（非同步）
-def get_tatoeba_examples(word, callback):
-    url = f"https://tatoeba.org/api/v2/search?query={requests.utils.quote(word)}&from=jpn&to=eng"
-    try:
-        response = requests.get(url, timeout=5)
-        response.raise_for_status()
-        data = response.json()
-        examples = []
-        for sentence in data.get("sentences", []):
-            if "jpn" in sentence and "eng" in sentence:
-                jp_text = sentence["jpn"]["text"]
-                en_text = sentence["eng"]["text"]
-                examples.append((jp_text, en_text))
-                if len(examples) >= 2:
-                    break
-        callback(examples if examples else None)
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching from Tatoeba: {e}")
-        callback(None)
 
 def save_wrong_answer(question, reading, user_answer, correct_answer):
     wrong_answer = {
@@ -68,7 +46,6 @@ class PracticeMode:
         self.current_word = None
         self.score = 0
         self.ui = ui_instance
-        self.example_fetching = False
         self.is_correct = False
 
     def load_vocab(self, level):
@@ -107,34 +84,21 @@ class PracticeMode:
             return
         self.current_word = random.choice(self.vocab)
         self.ui.update_word()
-        self.example_fetching = False
 
     def check_answer(self, answer):
-        if self.example_fetching or not self.current_word:
+        if not self.current_word:
             return
         cleaned_answer = clean_answer(answer)
         possible_meanings = get_possible_meanings(self.current_word['zh'])
         if cleaned_answer in possible_meanings:
             self.score += 10
             self.is_correct = True
+            msg = f"正確！+10分\n答案包含：{self.current_word['zh']}\n"
         else:
             self.is_correct = False
             save_wrong_answer(self.current_word['jp'], self.current_word['kana'], answer, self.current_word['zh'])
-        self.example_fetching = True
-        threading.Thread(target=lambda: get_tatoeba_examples(self.current_word['jp'], self.update_examples), daemon=True).start()
-
-    def update_examples(self, examples):
-        if self.current_word:
-            if self.is_correct:
-                msg = f"正確！+10分\n答案包含：{self.current_word['zh']}\n"
-            else:
-                msg = f"錯了！正確答案: {self.current_word['zh']}\n"
-            if examples:
-                example_str = "\n".join([f"{jp} - {en}" for jp, en in examples])
-            else:
-                example_str = "請用 Jisho.org 查例句！(Tatoeba 無例句或網路問題)"
-            self.ui.update_result(f"{msg}例句:\n{example_str}\n")
-        self.example_fetching = False
+            msg = f"錯了！正確答案: {self.current_word['zh']}\n"
+        self.ui.update_result(msg)
         self.next_word()
 
     def reset_quiz(self):

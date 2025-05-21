@@ -1,9 +1,5 @@
 ('C:\\Users\\Yukari17\\Downloads\\japvocab\\app\\build\\ui\\PYZ-00.pyz',
- [('__future__',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\__future__.py',
-   'PYMODULE'),
-  ('_compat_pickle',
+ [('_compat_pickle',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\_compat_pickle.py',
    'PYMODULE'),
@@ -31,126 +27,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\argparse.py',
    'PYMODULE'),
-  ('ast',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ast.py',
-   'PYMODULE'),
-  ('asyncio',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\__init__.py',
-   'PYMODULE'),
-  ('asyncio.base_events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\base_events.py',
-   'PYMODULE'),
-  ('asyncio.base_futures',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\base_futures.py',
-   'PYMODULE'),
-  ('asyncio.base_subprocess',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\base_subprocess.py',
-   'PYMODULE'),
-  ('asyncio.base_tasks',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\base_tasks.py',
-   'PYMODULE'),
-  ('asyncio.constants',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\constants.py',
-   'PYMODULE'),
-  ('asyncio.coroutines',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\coroutines.py',
-   'PYMODULE'),
-  ('asyncio.events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\events.py',
-   'PYMODULE'),
-  ('asyncio.exceptions',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\exceptions.py',
-   'PYMODULE'),
-  ('asyncio.format_helpers',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\format_helpers.py',
-   'PYMODULE'),
-  ('asyncio.futures',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\futures.py',
-   'PYMODULE'),
-  ('asyncio.locks',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\locks.py',
-   'PYMODULE'),
-  ('asyncio.log',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\log.py',
-   'PYMODULE'),
-  ('asyncio.proactor_events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\proactor_events.py',
-   'PYMODULE'),
-  ('asyncio.protocols',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\protocols.py',
-   'PYMODULE'),
-  ('asyncio.queues',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\queues.py',
-   'PYMODULE'),
-  ('asyncio.runners',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\runners.py',
-   'PYMODULE'),
-  ('asyncio.selector_events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\selector_events.py',
-   'PYMODULE'),
-  ('asyncio.sslproto',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\sslproto.py',
-   'PYMODULE'),
-  ('asyncio.staggered',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\staggered.py',
-   'PYMODULE'),
-  ('asyncio.streams',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\streams.py',
-   'PYMODULE'),
-  ('asyncio.subprocess',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\subprocess.py',
-   'PYMODULE'),
-  ('asyncio.tasks',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\tasks.py',
-   'PYMODULE'),
-  ('asyncio.threads',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\threads.py',
-   'PYMODULE'),
-  ('asyncio.transports',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\transports.py',
-   'PYMODULE'),
-  ('asyncio.trsock',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\trsock.py',
-   'PYMODULE'),
-  ('asyncio.unix_events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\unix_events.py',
-   'PYMODULE'),
-  ('asyncio.windows_events',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\windows_events.py',
-   'PYMODULE'),
-  ('asyncio.windows_utils',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\asyncio\\windows_utils.py',
-   'PYMODULE'),
   ('base64',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\base64.py',
@@ -166,56 +42,6 @@
   ('calendar',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\calendar.py',
-   'PYMODULE'),
-  ('certifi',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\certifi\\__init__.py',
-   'PYMODULE'),
-  ('certifi.core',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\certifi\\core.py',
-   'PYMODULE'),
-  ('charset_normalizer',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\__init__.py',
-   'PYMODULE'),
-  ('charset_normalizer.api',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\api.py',
-   'PYMODULE'),
-  ('charset_normalizer.cd',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\cd.py',
-   'PYMODULE'),
-  ('charset_normalizer.constant',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\constant.py',
-   'PYMODULE'),
-  ('charset_normalizer.legacy',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\legacy.py',
-   'PYMODULE'),
-  ('charset_normalizer.models',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\models.py',
-   'PYMODULE'),
-  ('charset_normalizer.utils',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\utils.py',
-   'PYMODULE'),
-  ('charset_normalizer.version',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\charset_normalizer\\version.py',
-   'PYMODULE'),
-  ('concurrent',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\concurrent\\__init__.py',
-   'PYMODULE'),
-  ('concurrent.futures',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\concurrent\\futures\\__init__.py',
-   'PYMODULE'),
-  ('concurrent.futures._base',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\concurrent\\futures\\_base.py',
-   'PYMODULE'),
-  ('concurrent.futures.process',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\concurrent\\futures\\process.py',
-   'PYMODULE'),
-  ('concurrent.futures.thread',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\concurrent\\futures\\thread.py',
    'PYMODULE'),
   ('configparser',
    'C:\\Program '
@@ -237,14 +63,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\csv.py',
    'PYMODULE'),
-  ('ctypes',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ctypes\\__init__.py',
-   'PYMODULE'),
-  ('ctypes._endian',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ctypes\\_endian.py',
-   'PYMODULE'),
   ('datetime',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\datetime.py',
@@ -252,10 +70,6 @@
   ('decimal',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\decimal.py',
-   'PYMODULE'),
-  ('dis',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\dis.py',
    'PYMODULE'),
   ('email',
    'C:\\Program '
@@ -348,17 +162,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\fractions.py',
    'PYMODULE'),
-  ('ftplib',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ftplib.py',
-   'PYMODULE'),
   ('getopt',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\getopt.py',
-   'PYMODULE'),
-  ('getpass',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\getpass.py',
    'PYMODULE'),
   ('gettext',
    'C:\\Program '
@@ -372,44 +178,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\hashlib.py',
    'PYMODULE'),
-  ('hmac',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\hmac.py',
-   'PYMODULE'),
-  ('http',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\http\\__init__.py',
-   'PYMODULE'),
-  ('http.client',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py',
-   'PYMODULE'),
-  ('http.cookiejar',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\http\\cookiejar.py',
-   'PYMODULE'),
-  ('http.cookies',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\http\\cookies.py',
-   'PYMODULE'),
-  ('idna',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\__init__.py',
-   'PYMODULE'),
-  ('idna.core',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\core.py',
-   'PYMODULE'),
-  ('idna.idnadata',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\idnadata.py',
-   'PYMODULE'),
-  ('idna.intranges',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\intranges.py',
-   'PYMODULE'),
-  ('idna.package_data',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\package_data.py',
-   'PYMODULE'),
-  ('idna.uts46data',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\idna\\uts46data.py',
-   'PYMODULE'),
   ('importlib',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\__init__.py',
@@ -421,10 +189,6 @@
   ('importlib._bootstrap_external',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\_bootstrap_external.py',
-   'PYMODULE'),
-  ('importlib._common',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\_common.py',
    'PYMODULE'),
   ('importlib.abc',
    'C:\\Program '
@@ -438,21 +202,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\metadata.py',
    'PYMODULE'),
-  ('importlib.resources',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\resources.py',
-   'PYMODULE'),
   ('importlib.util',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\importlib\\util.py',
-   'PYMODULE'),
-  ('inspect',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\inspect.py',
-   'PYMODULE'),
-  ('ipaddress',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ipaddress.py',
    'PYMODULE'),
   ('json',
    'C:\\Program '
@@ -478,117 +230,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\lzma.py',
    'PYMODULE'),
-  ('mimetypes',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\mimetypes.py',
-   'PYMODULE'),
-  ('multiprocessing',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\__init__.py',
-   'PYMODULE'),
-  ('multiprocessing.connection',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\connection.py',
-   'PYMODULE'),
-  ('multiprocessing.context',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\context.py',
-   'PYMODULE'),
-  ('multiprocessing.dummy',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\dummy\\__init__.py',
-   'PYMODULE'),
-  ('multiprocessing.dummy.connection',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\dummy\\connection.py',
-   'PYMODULE'),
-  ('multiprocessing.forkserver',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\forkserver.py',
-   'PYMODULE'),
-  ('multiprocessing.heap',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\heap.py',
-   'PYMODULE'),
-  ('multiprocessing.managers',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\managers.py',
-   'PYMODULE'),
-  ('multiprocessing.pool',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\pool.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_fork',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\popen_fork.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_forkserver',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\popen_forkserver.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_spawn_posix',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\popen_spawn_posix.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_spawn_win32',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\popen_spawn_win32.py',
-   'PYMODULE'),
-  ('multiprocessing.process',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\process.py',
-   'PYMODULE'),
-  ('multiprocessing.queues',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\queues.py',
-   'PYMODULE'),
-  ('multiprocessing.reduction',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\reduction.py',
-   'PYMODULE'),
-  ('multiprocessing.resource_sharer',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\resource_sharer.py',
-   'PYMODULE'),
-  ('multiprocessing.resource_tracker',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\resource_tracker.py',
-   'PYMODULE'),
-  ('multiprocessing.shared_memory',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\shared_memory.py',
-   'PYMODULE'),
-  ('multiprocessing.sharedctypes',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\sharedctypes.py',
-   'PYMODULE'),
-  ('multiprocessing.spawn',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\spawn.py',
-   'PYMODULE'),
-  ('multiprocessing.synchronize',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\synchronize.py',
-   'PYMODULE'),
-  ('multiprocessing.util',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\multiprocessing\\util.py',
-   'PYMODULE'),
-  ('netrc',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\netrc.py',
-   'PYMODULE'),
-  ('nturl2path',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\nturl2path.py',
-   'PYMODULE'),
   ('numbers',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\numbers.py',
-   'PYMODULE'),
-  ('opcode',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\opcode.py',
    'PYMODULE'),
   ('optparse',
    'C:\\Program '
@@ -602,10 +246,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\pickle.py',
    'PYMODULE'),
-  ('pkgutil',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\pkgutil.py',
-   'PYMODULE'),
   ('pprint',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\pprint.py',
@@ -617,10 +257,6 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\py_compile.py',
    'PYMODULE'),
-  ('queue',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\queue.py',
-   'PYMODULE'),
   ('quopri',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\quopri.py',
@@ -629,72 +265,9 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\random.py',
    'PYMODULE'),
-  ('requests',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\__init__.py',
-   'PYMODULE'),
-  ('requests.__version__',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\__version__.py',
-   'PYMODULE'),
-  ('requests._internal_utils',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\_internal_utils.py',
-   'PYMODULE'),
-  ('requests.adapters',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\adapters.py',
-   'PYMODULE'),
-  ('requests.api',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\api.py',
-   'PYMODULE'),
-  ('requests.auth',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\auth.py',
-   'PYMODULE'),
-  ('requests.certs',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\certs.py',
-   'PYMODULE'),
-  ('requests.compat',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\compat.py',
-   'PYMODULE'),
-  ('requests.cookies',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\cookies.py',
-   'PYMODULE'),
-  ('requests.exceptions',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\exceptions.py',
-   'PYMODULE'),
-  ('requests.hooks',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\hooks.py',
-   'PYMODULE'),
-  ('requests.models',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\models.py',
-   'PYMODULE'),
-  ('requests.packages',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\packages.py',
-   'PYMODULE'),
-  ('requests.sessions',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\sessions.py',
-   'PYMODULE'),
-  ('requests.status_codes',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\status_codes.py',
-   'PYMODULE'),
-  ('requests.structures',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\structures.py',
-   'PYMODULE'),
-  ('requests.utils',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\requests\\utils.py',
-   'PYMODULE'),
-  ('runpy',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\runpy.py',
-   'PYMODULE'),
-  ('secrets',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\secrets.py',
-   'PYMODULE'),
   ('selectors',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\selectors.py',
-   'PYMODULE'),
-  ('shlex',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\shlex.py',
    'PYMODULE'),
   ('shutil',
    'C:\\Program '
@@ -707,13 +280,6 @@
   ('socket',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\socket.py',
-   'PYMODULE'),
-  ('socks',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\socks.py',
-   'PYMODULE'),
-  ('ssl',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\ssl.py',
    'PYMODULE'),
   ('statistics',
    'C:\\Program '
@@ -734,10 +300,6 @@
   ('tarfile',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\tarfile.py',
-   'PYMODULE'),
-  ('tempfile',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\tempfile.py',
    'PYMODULE'),
   ('textwrap',
    'C:\\Program '
@@ -783,181 +345,19 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\typing.py',
    'PYMODULE'),
-  ('typing_extensions',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\typing_extensions.py',
-   'PYMODULE'),
   ('urllib',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\urllib\\__init__.py',
-   'PYMODULE'),
-  ('urllib.error',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\urllib\\error.py',
    'PYMODULE'),
   ('urllib.parse',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\urllib\\parse.py',
    'PYMODULE'),
-  ('urllib.request',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\urllib\\request.py',
-   'PYMODULE'),
-  ('urllib.response',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\urllib\\response.py',
-   'PYMODULE'),
-  ('urllib3',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\__init__.py',
-   'PYMODULE'),
-  ('urllib3._collections',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\_collections.py',
-   'PYMODULE'),
-  ('urllib3._version',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\_version.py',
-   'PYMODULE'),
-  ('urllib3.connection',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\connection.py',
-   'PYMODULE'),
-  ('urllib3.connectionpool',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\connectionpool.py',
-   'PYMODULE'),
-  ('urllib3.contrib',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\contrib\\__init__.py',
-   'PYMODULE'),
-  ('urllib3.contrib._appengine_environ',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\contrib\\_appengine_environ.py',
-   'PYMODULE'),
-  ('urllib3.contrib.pyopenssl',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\contrib\\pyopenssl.py',
-   'PYMODULE'),
-  ('urllib3.contrib.socks',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\contrib\\socks.py',
-   'PYMODULE'),
-  ('urllib3.exceptions',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\exceptions.py',
-   'PYMODULE'),
-  ('urllib3.fields',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\fields.py',
-   'PYMODULE'),
-  ('urllib3.filepost',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\filepost.py',
-   'PYMODULE'),
-  ('urllib3.packages',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\packages\\__init__.py',
-   'PYMODULE'),
-  ('urllib3.packages.backports',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\packages\\backports\\__init__.py',
-   'PYMODULE'),
-  ('urllib3.packages.backports.makefile',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\packages\\backports\\makefile.py',
-   'PYMODULE'),
-  ('urllib3.packages.backports.weakref_finalize',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\packages\\backports\\weakref_finalize.py',
-   'PYMODULE'),
-  ('urllib3.packages.six',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\packages\\six.py',
-   'PYMODULE'),
-  ('urllib3.poolmanager',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\poolmanager.py',
-   'PYMODULE'),
-  ('urllib3.request',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\request.py',
-   'PYMODULE'),
-  ('urllib3.response',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\response.py',
-   'PYMODULE'),
-  ('urllib3.util',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\__init__.py',
-   'PYMODULE'),
-  ('urllib3.util.connection',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\connection.py',
-   'PYMODULE'),
-  ('urllib3.util.proxy',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\proxy.py',
-   'PYMODULE'),
-  ('urllib3.util.queue',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\queue.py',
-   'PYMODULE'),
-  ('urllib3.util.request',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\request.py',
-   'PYMODULE'),
-  ('urllib3.util.response',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\response.py',
-   'PYMODULE'),
-  ('urllib3.util.retry',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\retry.py',
-   'PYMODULE'),
-  ('urllib3.util.ssl_',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\ssl_.py',
-   'PYMODULE'),
-  ('urllib3.util.ssl_match_hostname',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\ssl_match_hostname.py',
-   'PYMODULE'),
-  ('urllib3.util.ssltransport',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\ssltransport.py',
-   'PYMODULE'),
-  ('urllib3.util.timeout',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\timeout.py',
-   'PYMODULE'),
-  ('urllib3.util.url',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\url.py',
-   'PYMODULE'),
-  ('urllib3.util.wait',
-   'C:\\Users\\Yukari17\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages\\urllib3\\util\\wait.py',
-   'PYMODULE'),
   ('uu',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\uu.py',
    'PYMODULE'),
-  ('xml',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\__init__.py',
-   'PYMODULE'),
-  ('xml.parsers',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\parsers\\__init__.py',
-   'PYMODULE'),
-  ('xml.parsers.expat',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\parsers\\expat.py',
-   'PYMODULE'),
-  ('xml.sax',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\__init__.py',
-   'PYMODULE'),
-  ('xml.sax._exceptions',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\_exceptions.py',
-   'PYMODULE'),
-  ('xml.sax.expatreader',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\expatreader.py',
-   'PYMODULE'),
-  ('xml.sax.handler',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\handler.py',
-   'PYMODULE'),
-  ('xml.sax.saxutils',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\saxutils.py',
-   'PYMODULE'),
-  ('xml.sax.xmlreader',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xml\\sax\\xmlreader.py',
-   'PYMODULE'),
-  ('xmlrpc',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xmlrpc\\__init__.py',
-   'PYMODULE'),
-  ('xmlrpc.client',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\xmlrpc\\client.py',
-   'PYMODULE'),
   ('zipfile',
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\zipfile.py',
-   'PYMODULE'),
-  ('zipimport',
-   'C:\\Program '
-   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\\lib\\zipimport.py',
    'PYMODULE')])
