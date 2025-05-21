@@ -14,79 +14,80 @@ Tatoeba API 查不到太多例句，導致程式延遲，建議將其移除以�
 
 ---
 
-JapVocab - 日語單字測驗程式
-介紹
-JapVocab 是一個用於學習日語單字的桌面應用程式，幫助使用者通過練習模式和考試模式掌握日語 N5 至 N1 級別的單字。程式支援錯題記錄、間隔重複複習，並提供簡單易用的圖形介面。
-功能
+# JapVocab - 日語單字測驗程式
 
-練習模式：無時間限制，顯示單字的中文意思，幫助學習。
-考試模式：每題 30 秒計時，結束後顯示正確率和總分。
-錯題記錄與回顧：自動記錄答錯的單字，提供「錯題回顧」功能。
-間隔重複（Spaced Repetition）：錯題會在 1 天後提醒複習，幫助長期記憶。
-多級別支援：涵蓋 N5、N4、N3、N2、N1 級別的單字。
+JapVocab 是一款專為日語學習者設計的桌面應用程式，支援 N5 至 N1 級別單字，結合練習、考試與錯題複習功能，幫助你高效記憶日語單字。
 
-系統要求
+---
 
-作業系統：Windows（目前版本專為 Windows 設計）
-Python 版本：3.9
+## 主要功能
 
-安裝與運行
-必要條件
+- **練習模式**：無時間限制，顯示單字中文意思，適合日常複習。
+- **考試模式**：每題 30 秒倒數計時，結束後顯示正確率與總分。
+- **錯題記錄與回顧**：自動記錄錯誤單字，並可隨時回顧。
+- **間隔重複（Spaced Repetition）**：錯題將於 1 天後提醒複習，強化長期記憶。
+- **多級別支援**：涵蓋 N5、N4、N3、N2、N1 單字。
 
-確保已安裝 Python 3.9，驗證方式：python --version
+---
 
-如果未安裝，請從 Python 官網 下載並安裝。
+## 系統需求
 
-運行程式
+- **作業系統**：Windows
+- **Python 版本**：3.9
 
-從源碼運行：
+---
 
-將專案下載或複製到本地：git clone <repository-url> # 如果有 Git 倉庫
-cd japvocab/app
-python ui.py
+## 安裝與執行
 
-確保 output 資料夾中包含 n1_zh.csv, n2_zh.csv, ..., n5_zh.csv 檔案（格式為 expression,reading,meaning,tags）。
+1. **安裝 Python 3.9**  
+   檢查方式：
 
-運行可執行檔案：
+   ```sh
+   python --version
+   ```
 
-專案已打包為 ui.exe，位於 japvocab 目錄。
-雙擊 japvocab/ui.exe 直接運行。
+   如未安裝，請至 [Python 官網](https://www.python.org/downloads/) 下載安裝。
 
-打包（若需自訂修改後重新打包）
+2. **下載專案**
 
-確保安裝 PyInstaller：pip install pyinstaller
+   ```sh
+   git clone <repository-url>
+   ```
 
-在 japvocab/app 目錄下執行：pyinstaller --add-data "output;output" --distpath "../" -F ui.py
+3. **執行程式**
+   ```sh
+   cd japvocab/app
+   python ui.py
+   ```
+   > 請確保 `output` 資料夾內有 `n1_zh.csv` ~ `n5_zh.csv`（格式：expression,reading,meaning,tags）
 
-打包後的 ui.exe 會生成在 japvocab 目錄。
+---
 
-使用方法
+## 使用說明
 
-啟動程式：運行 ui.exe 或 python ui.py。
-選擇模式：從下拉選單選擇「練習模式」或「考試模式」。
-選擇級別：選擇 N5 至 N1 級別。
-開始測驗：
-輸入答案後按「提交答案」或 Enter 鍵。
-練習模式顯示中文意思，考試模式有 30 秒計時。
+1. 啟動程式（`python ui.py`）。
+2. 選擇「練習模式」或「考試模式」。
+3. 選擇單字級別（N5~N1）。
+4. 開始測驗，輸入答案後按「提交答案」或 Enter。
+5. 錯題自動記錄，可點擊「錯題回顧」查看。
+6. 間隔重複會在錯題到期時提醒複習。
+7. 可隨時重啟測驗或退出程式。
 
-錯題管理：
-答錯後自動記錄，點擊「錯題回顧」查看。
-間隔重複會在錯題到期時提醒。
+---
 
-重啟或退出：使用「重啟測驗」重新開始，或「退出」結束程式。
+## 檔案結構
 
-檔案結構
+```
 japvocab/
 ├── app/
-│ ├── **pycache**/
-│ ├── exam_mode.py
-│ ├── practice_mode.py
-│ ├── ui.py
-│ └── output/
-│ ├── n1_zh.csv
-│ ├── n2_zh.csv
-│ ├── n3_zh.csv
-│ ├── n4_zh.csv
-│ └── n5_zh.csv
-├── ui.exe
-└── wrong_answers.json (運行後生成)
+│   ├── exam_mode.py
+│   ├── practice_mode.py
+│   ├── ui.py
+│   └── output/
+│       ├── n1_zh.csv
+│       ├── n2_zh.csv
+│       ├── n3_zh.csv
+│       ├── n4_zh.csv
+│       └── n5_zh.csv
+└── wrong_answers.json（運行後自動生成）
+```
